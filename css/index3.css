@@ -14556,7 +14556,7 @@ a i.coupa-icon.orange:active {
     border-radius: 8px;
     padding: 2rem !important;
     background-color: #fff;
-    max-width: 850px;
+    max-width: 1350px !important;
     margin: auto
 }
 
@@ -32189,7 +32189,9 @@ article.center-article .card-img-column {
 
 @media screen and (min-width:100em) {
     .page-node-type-industry .main-section {
-        background-position-x: calc(50% + 300px)
+        background-position-x: calc(50% + 300px);
+        margin: 0 auto;
+        
     }
 }
 
@@ -34523,7 +34525,8 @@ a:focus {
     line-height: 1rem;
     font-size: 1.0666666667rem;
     margin-bottom: -0.14801rem;
-    padding-top: 0.14801rem
+    padding-top: 0.14801rem;
+    font-weight: 500 !important;
 }
 
 @media screen and (min-width:30em) {
@@ -34547,16 +34550,18 @@ a:focus {
 @media screen and (min-width:68.75em) {
     .typeset .theta,
     .cke_editable .theta {
-        font-size: 0.8533333333rem;
+        font-size: 0.94rem;
         margin-bottom: -0.21841rem;
-        padding-top: 0.21841rem
+        padding-top: 0.21841rem;
+
+        
     }
 }
 
 @media screen and (min-width:100em) {
     .typeset .theta,
     .cke_editable .theta {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: -0.20301rem;
         padding-top: 0.20301rem
     }
@@ -45713,14 +45718,14 @@ table.fixed {
 
 @media screen and (min-width:68.75em) {
     .site-width-large {
-        max-width: 1148px;
+        max-width: 1280px;
         margin: 0 auto
     }
 }
 
 @media screen and (min-width:100em) {
     .site-width-large {
-        max-width: 1148px;
+        max-width: 1380px;
         margin: 0 auto
     }
 }
