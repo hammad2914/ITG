@@ -13185,7 +13185,7 @@ footer .button.center {
 
 .resource-item-type .resource-webpage .card-item-type span:before,
 .resource-item-type .tid-3859 .card-item-type span:before {
-    content: "î¥•"
+    content: ""
 }
 
 .resource-item-type .resource-webpage .link-bg,
@@ -19177,7 +19177,7 @@ dialog+.backdrop {
 
 @media screen and (min-width:68.75em) {
     .section-head-text {
-        max-width: 1148px;
+        max-width: 1280px;
         margin: 0 auto
     }
 }
@@ -24596,7 +24596,7 @@ div.small-card-button.three-button-cards {
 .pre-title-h3 {
     display: inline-block;
     line-height: 2.3rem;
-    font-size: 1.8666666667rem;
+    font-size: 1.5666666667rem;
     margin-bottom: 0.46599rem;
     padding-top: 0.53401rem
 }
@@ -34051,7 +34051,7 @@ a:focus {
 .typeset .bigger,
 .cke_editable .bigger {
     line-height: 3rem;
-    font-size: 2.6rem;
+    font-size: 2.1rem;
     margin-bottom: 0.35799rem;
     padding-top: 0.64201rem
 }
