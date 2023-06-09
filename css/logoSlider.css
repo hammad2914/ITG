@@ -4,13 +4,12 @@
 
 
   .slick-slide {
-      margin: 0px 20px;
-      max-width: 180px;
+      margin: 0px 20px;   
   }
+
   
   .slick-slide img {
         width: 100%;
-      max-height: 150px;
   }
   
   .slick-slider
@@ -62,8 +61,8 @@
       position: relative;
       top: 0;
       left: 0;
-      display: flex;
-      align-items: center;
+  
+      display: block;
   }
   .slick-track:before,
   .slick-track:after
