@@ -1,13 +1,13 @@
-function goToSourcing() {
-    window.location.href = "/sub-links/sourcing.html";
+function goToSourcing(link) {
+    window.location.href = link;
   }
 
-function goToSustainability(){
-    window.location.href = "/sub-links/sustainability.html";
+function goToSustainability(link){
+    window.location.href = link;
 }  
 
-function goToSupplyChain(){
-    window.location.href = "/sub-links/supply-chain.html";
+function goToSupplyChain(link){
+    window.location.href = link;
 }  
 
 function goToPage(url) {
