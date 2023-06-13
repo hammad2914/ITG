@@ -19192,12 +19192,18 @@ dialog+.backdrop {
 .section-head-text .title-block .content {
     color: #2a4788
 }
+.section-head-text .title-block .img{
+    display:none;
+}
 
 @media screen and (min-width:50em) {
     .section-head-text .title-block .content {
-        max-width: 700px
+        max-width: 800px
     }
+    
 }
+
+
 
 .section-head-text .title-block .content h2.pre-title {
     font-size: 1.3333333333rem;
@@ -19220,6 +19226,9 @@ dialog+.backdrop {
 @media screen and (min-width:68.75em) {
     .section-head-text .title-block .content h2.pre-title {
         font-size: 1.1333333333rem
+    }
+    .section-head-text .title-block .img{
+        display: block;
     }
 }
 
@@ -19309,7 +19318,7 @@ dialog+.backdrop {
 
 .oval-hero-solid {
     background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6957 4000'><path d='M6643.2,0.7c-2.8,671.3-777.8,1215-1733.5,1215S3179,672.1,3176.2,0.7H0.7v4568h9818V0.7H6643.2z' fill='%23FFFFFF' /></svg>"), url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 800'><rect x='0.5' y='0.5' width='4000' height='800' fill='%23ddf4ff' /></svg>") !important;
-    background-size: 7000px auto, 4000px auto;
+    background-size: 7300px auto, 4000px auto;
     background-position-x: calc(50% - 1700px), 0;
     background-repeat: repeat-x, repeat-x;
     background-clip: border-box;
@@ -19319,6 +19328,12 @@ dialog+.backdrop {
 @media screen and (min-width:50em) {
     .oval-hero-solid {
         background-position-y: -850px, 0
+    }
+}
+
+@media screen and (max-width:50em) {
+    .oval-hero-solid {
+        background-size: 7000px auto, 4000px auto;
     }
 }
 
@@ -24350,7 +24365,7 @@ div.homepageCard a {
 }
 
 .path-frontpage .two-column-header.header-large .section-head-text {
-    margin-bottom: 2rem
+    margin-bottom: 3rem
 }
 
 .path-frontpage .card-grid-three .field--name-field-heading {
@@ -24603,7 +24618,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:30em) {
     .pre-title-h3 {
-        font-size: 1.7230769231rem;
+        font-size: 1.5230769231rem;
         margin-bottom: 0.4186053846rem;
         padding-top: 0.5813946154rem
     }
@@ -24611,7 +24626,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:50em) {
     .pre-title-h3 {
-        font-size: 1.6rem;
+        font-size: 1.4555rem;
         margin-bottom: 0.37799rem;
         padding-top: 0.62201rem
     }
@@ -24619,7 +24634,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:68.75em) {
     .pre-title-h3 {
-        font-size: 1.6533333333rem;
+        font-size: 1.5533333333rem;
         margin-bottom: 0.39559rem;
         padding-top: 0.60441rem
     }
@@ -24627,7 +24642,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:100em) {
     .pre-title-h3 {
-        font-size: 1.78125rem;
+        font-size: 1.68125rem;
         margin-bottom: 0.4378025rem;
         padding-top: 0.5621975rem
     }
@@ -34523,10 +34538,11 @@ a:focus {
 .typeset .theta,
 .cke_editable .theta {
     line-height: 1rem;
-    font-size: 1.0666666667rem;
+    font-size: 1rem;
     margin-bottom: -0.14801rem;
     padding-top: 0.14801rem;
-    font-weight: 500 !important;
+    font-weight:400 !important;
+    color: #0a0a0a !important;
 }
 
 @media screen and (min-width:30em) {
@@ -34543,25 +34559,24 @@ a:focus {
     .cke_editable .theta {
         font-size: 0.9142857143rem;
         margin-bottom: -0.1982957143rem;
-        padding-top: 0.1982957143rem
+        padding-top: 0.1982957143rem;
+        
     }
 }
 
 @media screen and (min-width:68.75em) {
     .typeset .theta,
     .cke_editable .theta {
-        font-size: 0.94rem;
+        font-size: 1.1rem;
         margin-bottom: -0.21841rem;
         padding-top: 0.21841rem;
-
-        
     }
 }
 
 @media screen and (min-width:100em) {
     .typeset .theta,
     .cke_editable .theta {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: -0.20301rem;
         padding-top: 0.20301rem
     }
@@ -46665,30 +46680,35 @@ div.st-ui-autocomplete div.st-query-present a.st-ui-result {
     position: relative
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner {
+.persona-home-cards .persona-card .persona-card-link{
+        user-select: text !important;
+        -webkit-user-select: text !important; 
+}
+
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner {
     padding: 1rem 2rem
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner h4 {
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner h4 {
     padding-right: 2rem;
     color: #282828
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner p {
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner p {
     line-height: 1.2rem;
     color: #282828
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner .persona-link {
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner .persona-link {
     margin-top: 1rem;
     margin-bottom: 2rem
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner .persona-link span {
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner .persona-link span {
     color: #282828
 }
 
-.persona-home-cards .persona-card a.persona-card-link .persona-card-inner .persona-link span svg {
+.persona-home-cards .persona-card .persona-card-link .persona-card-inner .persona-link span svg {
     max-width: 50px;
     vertical-align: middle
 }
