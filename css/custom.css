@@ -118,6 +118,7 @@
     font-weight: 400;
     position: fixed;
     background-color: #fff;
+    z-index: 999;
 }
 .history-nav .active{
     color: black;
