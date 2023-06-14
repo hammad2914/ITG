@@ -1,0 +1,25 @@
+hushly.api = "https://app.hushly.com/";
+hushly.eventApi = "http://localhost:8585/";
+hushly.eventApiVersion = "v1";
+hushly.cdn = "https://app.hushly.com/";
+hushly.coreApi = "https://core-api.hushly.com/";
+hushly.css = "https://app.hushly.com/assets/widget-86616d5946edd9a2cd99f210fd4931af.css";
+hushly.loader = "https://app.hushly.com/assets/widget-loader-4ea0ab9e10361ac74d1736d4771a4eac.js";
+hushly.scripts = [
+    "https://app.hushly.com/assets/widget-lib-1-a1f8ecf70c072a3ecedd6e457423b3f5.js",
+    "https://app.hushly.com/assets/widget-lib-2-71e90bdbaf8e69fb602dc214e6869f8e.js",
+    "https://app.hushly.com/assets/widget-core-d69caf737304e35cda9bcbea51b8fd3d.js"
+]
+
+
+var widgetSource = "https://app.hushly.com/assets/widget-501241365316ccaa6a710fa6a5f52abb.js";
+"undefined" != typeof window._hlyc && (widgetSource = window._hlyc),
+
+function() {
+    var scriptTag = document.createElement("script"); 
+    scriptTag.type = "text/javascript"; 
+    scriptTag.async = true; 
+    scriptTag.src = widgetSource; 
+    (document.getElementsByTagName("head")[0] 
+                    || document.documentElement).appendChild(scriptTag);
+}();

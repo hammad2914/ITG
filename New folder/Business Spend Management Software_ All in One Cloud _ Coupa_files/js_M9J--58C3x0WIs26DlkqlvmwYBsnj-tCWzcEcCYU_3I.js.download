@@ -1,0 +1,107 @@
+// addSearch settings
+window.addsearch_settings = {
+  "addsearch-input": {
+    "hide_logo": true,
+    "automatic_filter_results_by_site_language": true
+  }
+};
+
+(function (once, $) {
+
+  Drupal.behaviors.addsearch = {
+    attach: function (context) {
+      let view_more_text = Drupal.t('Scroll to view more');
+      $('<div class="addsWg-scroll-notification">' + view_more_text + '</div>').prependTo('.addsWg--footer');
+
+      // Select the node that will be observed for mutations
+      const targetNode = document.getElementsByClassName('adds-components-widget-results')[0];
+
+      // Options for the observer (which mutations to observe)
+      const config = {attributeFilter: ['class']};
+
+      // Callback function to execute when mutations are observed
+      const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+
+          // Click on opened search button if AddSearch widget receives the hidden class
+          if (mutation.type === 'attributes' && $(mutation.target).hasClass('addsWg-hidden')) {
+            $('.menu-item__search.menu-item__is-open').click(); // new menu item
+            $('.search-container.mm-active').prev().click(); // old menu item
+          } else if (mutation.type === 'attributes' && !$('.addsWg-scroll-notification').hasClass('hidden')) {
+            $('.addsWg-scroll-notification').addClass('animate');
+            $('.addsWg-scroll-notification').animate({left: '50%'}, 4000, 'linear', () => {
+              $('.addsWg-scroll-notification').animate({opacity: 0}, 400, 'linear', () => {
+                $('.addsWg-scroll-notification').addClass('hidden');
+              });
+            });
+          }
+        }
+      };
+
+      // Create an observer instance linked to the callback function
+      const observer = new MutationObserver(callback);
+
+      // Start observing the target node for configured mutations
+      observer.observe(targetNode, config);
+
+      // Later, you can stop observing
+      //observer.disconnect();
+    }
+  };
+})(once, jQuery);
+;
+jQuery(document).once("key55").ready(function () {
+    jQuery('.nav-item > a').once("key0").click(function (e) {
+        jQuery(this).parent('li').toggleClass('responsive-height');
+        jQuery('.nav-item > a').not(jQuery(this)).parent('li').removeClass('responsive-height');
+        jQuery(this).addClass('item-active');
+        jQuery(this).next('.submenu').toggleClass('mm-active');
+        jQuery('.nav-item > a').not(jQuery(this)).removeClass('item-active');
+        jQuery('.nav-item > a').not(jQuery(this)).next('.submenu').removeClass('mm-active');
+        jQuery('.secondary-submenu').removeClass('secondary-submenu-active');
+        //submenu
+        jQuery('.sub-nav-item-search > a').next('.secondary-submenu-full').removeClass('mm-active');
+        jQuery('.adds-components-widget-results').addClass('addsWg-hidden');
+        if(!jQuery(this).hasClass('do-click')) {
+            e.preventDefault();
+        }
+    });
+    jQuery('.main-menu').once("key6").click(function (event) {
+        event.stopPropagation();
+    });
+    /*
+    * Secondary Menu JS
+    */
+    jQuery('.sub-nav-item-search > a').once("key1").click(function (e) {
+        jQuery(this).next('.secondary-submenu-full').toggleClass('mm-active');
+        jQuery('.nav-item > a').removeClass('item-active');
+        jQuery('.nav-item > a').next('.submenu').removeClass('mm-active');
+        jQuery('.secondary-submenu').removeClass('secondary-submenu-active');
+        e.preventDefault();
+    });
+    jQuery('.sub-nav-item > a').once("key2").click(function (e) {
+        jQuery(this).next('.secondary-submenu').toggleClass('secondary-submenu-active');
+        jQuery('.sub-nav-item > a').not(jQuery(this)).next('.secondary-submenu').removeClass('secondary-submenu-active');
+        jQuery('.nav-item > a').removeClass('item-active');
+        jQuery('.nav-item > a').next('.submenu').removeClass('mm-active');
+        jQuery('.secondary-submenu-full').removeClass('mm-active');
+        e.preventDefault();
+    });
+    jQuery(window).once("key3").click(function () {
+        jQuery('.submenu').removeClass('mm-active');
+        jQuery('.nav-item > a').removeClass('item-active');
+        jQuery('.sub-nav-item-search > a').next('.secondary-submenu-full').removeClass('mm-active');
+        jQuery('.adds-components-widget-results').addClass('addsWg-hidden');
+        jQuery('.secondary-submenu').removeClass('secondary-submenu-active');
+    });
+    /*
+    * Hamburger Menu
+    */
+    jQuery('.hamburger').once("key15").click(function(e) {
+        jQuery(this).toggleClass('is-active');
+        jQuery('.main-menu-list').toggleClass('main-menu-list-active');
+        jQuery('#block-system-menu-block-blog-term-menu').toggleClass('blog-menu-show');
+        e.preventDefault();
+    });
+});
+;

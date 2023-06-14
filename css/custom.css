@@ -105,9 +105,13 @@
 /* Animation */
 
 #lottie-animation {
-    width: 700px !important; 
+    width: 600px !important; 
     height: auto !important;  
   }
+#lottie-animation svg {
+    width: 100%;
+    height: 100%;
+}  
 
 /* History Bar */
 
@@ -119,6 +123,8 @@
     position: fixed;
     background-color: #fff;
     z-index: 999 !important;
+    border-top: 1px solid rgb(209, 205, 205);
+    border-bottom: 1px solid rgb(209, 205, 205);
 }
 .history-nav .active{
     color: black;
@@ -129,6 +135,27 @@
         position: static;
     }
 }
+
+.field__item_img{
+    display: flex;
+    justify-content: center;
+}
+.tab_link{
+    font-size: 16px;
+}
+
+@media screen and (min-width: 800px){
+.column.is-half-desktop {
+    flex: none;
+    width: 50% !important;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 799px){
+    .column.is-half-desktop {
+        flex: none;
+        width: 100% !important;
+    }
+    }
 
 
 @media (max-width:998px){
