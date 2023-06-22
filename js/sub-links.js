@@ -3391,28 +3391,27 @@ jQuery(document).ready(function () {
 
 
      // Add handlers to change slides when icons are clicked.
-$slickElement.on('init', function (event, slick, currentSlide, nextSlide) {
-  currentSlide = currentSlide || 0;
-  
-  const images = Array.from(document.querySelectorAll('[data-slider-wheel-image]'));
-  
-  images.forEach(image => {
-    const svgDoc = image.contentDocument;
-    
-    if (svgDoc) {
-      const elements = svgDoc.querySelectorAll('.hover [data-slider-wheel-slide]');
-      
-      elements.forEach(element => {
-        element.addEventListener('click', event => {
+     $slickElement.on('init', function (event, slick, currentSlide, nextSlide) {
+      currentSlide = currentSlide || 0;        
+      const images = Array.from(document.querySelectorAll('[data-slider-wheel-image]'));
+      images.forEach(image => {
+        ensureCallback( e => {
+          const svgDoc = image.contentDocument;
           
-          $slickElement.slick('slickGoTo', event.currentTarget.dataset.sliderWheelSlide);
+          if (svgDoc) {
+            for (const element of svgDoc.querySelectorAll('.hover [data-slider-wheel-slide]')) {
+              element.addEventListener('click', event => {
+                $slickElement.slick('slickGoTo', event.currentTarget.dataset.sliderWheelSlide);
+              });
+            }
+
+            setActiveIcon(component, currentSlide);
+          }
         });
       });
-      
-      setActiveIcon(component, currentSlide);
-    }
-  });
-});
+    });
+
+
 
 
 

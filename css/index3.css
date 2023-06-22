@@ -19200,6 +19200,7 @@ dialog+.backdrop {
 
 @media screen and (min-width:50em) {
     .section-head-text .title-block .content {
+        min-width: 800px;
         max-width: 800px
     }
     
