@@ -32440,14 +32440,14 @@ article.center-article .card-img-column {
 }
 
 .page-node-type-product .layout-container .product-page-alpha .product-menu {
-    background-color: #f4f9fc;
-    border-top: solid 4px #2a4788;
-    text-align: center;
-    margin-bottom: 4rem
+    background-color: #f4f9fc !important;
+    border-top: solid 4px #2a4788 !important;
+    text-align: center !important;
+    margin-bottom: 4rem !important;
 }
 
 .page-node-type-product .layout-container .product-page-alpha .product-menu div {
-    display: inline-block
+    display: inline-block !important;
 }
 
 .page-node-type-product .layout-container .product-page-alpha .product-menu div ul {
@@ -32462,7 +32462,7 @@ article.center-article .card-img-column {
 
 @media screen and (min-width:50em) {
     .page-node-type-product .layout-container .product-page-alpha .product-menu div ul {
-        flex-direction: row
+        flex-direction: row !important;
     }
 }
 

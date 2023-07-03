@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'ITG Font';
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF') format('truetype');
+}
+
 
 
 @import"https://p.typekit.net/p.css?s=1&k=awj7kkq&ht=tk&f=2003.2005.2007.2009.2011&a=763487&app=typekit&e=css";
@@ -42,9 +47,9 @@
     font-weight: 300;
     font-style: italic
 }
-
+/* 
 @font-face {
-    font-family: "museo-sans";
+    font-family: "ITG Font";
     src: url("https://use.typekit.net/af/635674/00000000000000000000e800/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"), url("https://use.typekit.net/af/635674/00000000000000000000e800/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"), url("https://use.typekit.net/af/635674/00000000000000000000e800/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
     font-display: auto;
     font-style: normal;
@@ -53,7 +58,7 @@
 }
 
 @font-face {
-    font-family: "museo-sans";
+    font-family: "ITG Font";
     src: url("https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
     font-display: auto;
     font-style: normal;
@@ -62,7 +67,7 @@
 }
 
 @font-face {
-    font-family: "museo-sans";
+    font-family: "ITG Font";
     src: url("https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
     font-display: auto;
     font-style: normal;
@@ -71,7 +76,7 @@
 }
 
 @font-face {
-    font-family: "museo-sans";
+    font-family: "ITG Font";
     src: url("https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
     font-display: auto;
     font-style: normal;
@@ -80,7 +85,7 @@
 }
 
 @font-face {
-    font-family: "museo-sans";
+    font-family: "ITG Font";
     src: url("https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"), url("https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"), url("https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
     font-display: auto;
     font-style: normal;
@@ -88,9 +93,7 @@
     font-stretch: normal
 }
 
-.tk-museo-sans {
-    font-family: "museo-sans", sans-serif
-}
+
 
 @font-face {
     font-family: "coupa-theme-icons";
@@ -98,6 +101,10 @@
     font-weight: normal;
     font-style: normal;
     font-display: block
+} */
+
+.tk-ITG Font {
+    font-family: "ITG Font", sans-serif
 }
 
 [class^=icon-],
@@ -286,7 +293,7 @@ html {
 
 body {
     font-size: 1.3333333333rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 2rem
@@ -390,7 +397,7 @@ a:focus {
 .cke_editable h4,
 .cke_editable h5,
 .cke_editable h6 {
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-feature-settings: "dlig", "liga", "lnum", "kern";
     font-style: normal;
     font-weight: 700
@@ -1065,7 +1072,7 @@ a:focus {
     font-size: 1.1916666667rem;
     margin-bottom: -0.60676rem;
     padding-top: 0.60676rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-feature-settings: "liga", "lnum", "tnum", "kern";
     font-style: normal;
     font-weight: 400;
@@ -1174,7 +1181,7 @@ a:focus {
 .cke_editable small,
 .cke_editable .caption {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-style: normal;
     font-weight: 400
 }
@@ -10620,7 +10627,7 @@ footer .button {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -11108,7 +11115,7 @@ footer .button.center {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -11364,14 +11371,14 @@ footer .button.center {
 .link-button>a.white.hollow:hover,
 .link-button>a.white.hollow:active {
     background-color: transparent !important;
-    border-color: #065A9F !important;
-    color: #065A9F !important
+    border-color: #1ab4ff !important;
+    color: #1ab4ff !important;
 }
 
 .link-button>a.white.hollow:focus {
-    background-color: transparent;
-    border-color: #065A9F;
-    color: #065A9F !important
+    background-color: transparent !important;
+    border-color: #1ab4ff !important;
+    color: #1ab4ff !important;
 }
 
 .link-button>a.outline {
@@ -11520,7 +11527,7 @@ footer .button.center {
 .tag-chip a,
 .tag-chip-icon a {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     display: inline-block;
     font-weight: 500;
     vertical-align: middle;
@@ -11590,7 +11597,7 @@ footer .button.center {
 .tag-chip-orange a,
 .tag-chip-icon a {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     display: inline-block;
     font-weight: 500;
     vertical-align: middle;
@@ -11665,7 +11672,7 @@ footer .button.center {
 
 .tag-chip-menu ul li a {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     display: inline-block;
     font-weight: 500;
     vertical-align: middle;
@@ -11728,7 +11735,7 @@ footer .button.center {
 
 .tag-chip-menu-orange ul li a {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     display: inline-block;
     font-weight: 500;
     vertical-align: middle;
@@ -14390,7 +14397,7 @@ footer .button.center {
 
 [class^=icon-] span,
 [class*=" icon-"] span {
-    font-family: museo-sans, sans-serif !important
+    font-family: "ITG Font", sans-serif !important
 }
 
 i.coupa-icon {
@@ -17583,7 +17590,7 @@ dialog+.backdrop {
 }
 
 .twocolumn-accordion .accordion-menu.accordion-column.one ul li.active>div {
-    max-height: 24rem;
+    max-height: 28rem;
     transition: all .5s ease-in-out
 }
 
@@ -17931,7 +17938,7 @@ dialog+.backdrop {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -18681,7 +18688,7 @@ dialog+.backdrop {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -19321,12 +19328,15 @@ dialog+.backdrop {
 
 .oval-hero-solid {
     background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6957 4000'><path d='M6643.2,0.7c-2.8,671.3-777.8,1215-1733.5,1215S3179,672.1,3176.2,0.7H0.7v4568h9818V0.7H6643.2z' fill='%23FFFFFF' /></svg>"), url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 800'><rect x='0.5' y='0.5' width='4000' height='800' fill='%23ddf4ff' /></svg>") !important;
-    background-size: 7300px auto, 4000px auto;
+    background-size: 7300px auto,2930px auto;
     background-position-x: calc(50% - 1700px), 0;
     background-repeat: repeat-x, repeat-x;
     background-clip: border-box;
     background-position-y: -900px, 0
+    
 }
+
+  
 
 @media screen and (min-width:50em) {
     .oval-hero-solid {
@@ -21568,7 +21578,7 @@ menu.main-menu {
     align-items: center;
     background-color: #fff;
     border-bottom: solid 1px #dfe3e5;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-size: 1.3333333333rem
 }
 
@@ -22918,7 +22928,7 @@ menu.main-menu {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -23937,7 +23947,7 @@ div.homepageCard {
     position: relative;
     max-width: 450px;
     margin: 0 auto;
-    font-family: museo-sans, sans-serif
+    font-family: "ITG Font", sans-serif
 }
 
 div.homepageCard img {
@@ -24611,17 +24621,28 @@ div.small-card-button.three-button-cards {
     left: 0
 }
 
+
+
+@media screen and (min-width:68.75em) {
+    .pre-title-large {
+        font-size: 2.66666rem ;
+    }
+}
+
+
+
+
 .pre-title-h3 {
     display: inline-block;
-    line-height: 2.3rem;
-    font-size: 1.5666666667rem;
+    line-height: 140%;
+    font-size: 1.4666666667rem;
     margin-bottom: 0.46599rem;
     padding-top: 0.53401rem
 }
 
 @media screen and (min-width:30em) {
     .pre-title-h3 {
-        font-size: 1.5230769231rem;
+        font-size: 1.4230769231rem;
         margin-bottom: 0.4186053846rem;
         padding-top: 0.5813946154rem
     }
@@ -24629,7 +24650,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:50em) {
     .pre-title-h3 {
-        font-size: 1.4555rem;
+        font-size: 1.3555rem;
         margin-bottom: 0.37799rem;
         padding-top: 0.62201rem
     }
@@ -24637,7 +24658,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:68.75em) {
     .pre-title-h3 {
-        font-size: 1.5533333333rem;
+        font-size: 1.4533333333rem;
         margin-bottom: 0.39559rem;
         padding-top: 0.60441rem
     }
@@ -24645,7 +24666,7 @@ div.small-card-button.three-button-cards {
 
 @media screen and (min-width:100em) {
     .pre-title-h3 {
-        font-size: 1.68125rem;
+        font-size: 1.58125rem;
         margin-bottom: 0.4378025rem;
         padding-top: 0.5621975rem
     }
@@ -27449,7 +27470,7 @@ code .chunk {
 .block-facets-summary-blockblog-facets-summary .facet-items .facet-summary-item--facet.tid-3512 a,
 .block-facets-summary-blockblog-facets-summary .facet-items .facet-summary-item--facet.tid-3510 a {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     display: inline-block;
     font-weight: 500;
     vertical-align: middle;
@@ -27619,7 +27640,7 @@ code .chunk {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -30596,7 +30617,7 @@ article.center-article .card-img-column {
 
 .customers-display-group .title-group .title-title h1,
 .customers-display-group .title-group .title-title h2 {
-    margin: 1.5rem 0 0 0 !important;
+    margin: 1.5rem 0 1rem 0 !important;
     padding-bottom: 0 !important;
     line-height: 1.6rem;
     font-size: 2.6rem;
@@ -31133,7 +31154,7 @@ article.center-article .card-img-column {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -32347,7 +32368,7 @@ article.center-article .card-img-column {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -33283,7 +33304,7 @@ article.center-article .card-img-column {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -33956,7 +33977,7 @@ html {
 
 body {
     font-size: 1.3333333333rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 2rem
@@ -34060,7 +34081,7 @@ a:focus {
 .cke_editable h4,
 .cke_editable h5,
 .cke_editable h6 {
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-feature-settings: "dlig", "liga", "lnum", "kern";
     font-style: normal;
     font-weight: 700
@@ -34095,7 +34116,7 @@ a:focus {
 @media screen and (min-width:68.75em) {
     .typeset .bigger,
     .cke_editable .bigger {
-        font-size: 2.6666666667rem;
+        font-size: 2.6666666667rem !important;
         margin-bottom: 0.37999rem;
         padding-top: 0.62001rem
     }
@@ -34544,7 +34565,7 @@ a:focus {
     font-size: 1rem;
     margin-bottom: -0.14801rem;
     padding-top: 0.14801rem;
-    font-weight:400 !important;
+    font-weight:300 !important;
     color: #0a0a0a !important;
 }
 
@@ -34738,7 +34759,7 @@ a:focus {
     font-size: 1.1916666667rem;
     margin-bottom: -0.60676rem;
     padding-top: 0.60676rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-feature-settings: "liga", "lnum", "tnum", "kern";
     font-style: normal;
     font-weight: 400;
@@ -34847,7 +34868,7 @@ a:focus {
 .cke_editable small,
 .cke_editable .caption {
     font-size: 1.0666666667rem;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-style: normal;
     font-weight: 400
 }
@@ -35786,7 +35807,7 @@ a:focus {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -36429,7 +36450,7 @@ a:focus {
         margin-left: initial;
         margin-right: initial;
         border-radius: 100rem;
-        font-family: museo-sans, sans-serif !important;
+        font-family: "ITG Font", sans-serif !important;
         font-size: initial;
         font-weight: 700 !important;
         vertical-align: middle;
@@ -37259,7 +37280,7 @@ a:focus {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -38032,7 +38053,7 @@ div.static-template .mktoButtonWrap.mktoNative button {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -40026,7 +40047,7 @@ div.cookie-policy .cookie-policies .policy-sections ul {
     text-transform: capitalize;
     color: #2a4788;
     font-weight: 700;
-    font-family: "museo-sans", sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-size: 16px
 }
 
@@ -41001,7 +41022,7 @@ div.cookie-policy .cookie-policies .policy-sections ul {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -43170,7 +43191,7 @@ div.venture .partners img {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -44529,7 +44550,7 @@ form.mktoForm.display-none {
     margin-left: initial;
     margin-right: initial;
     border-radius: 100rem;
-    font-family: museo-sans, sans-serif !important;
+    font-family: "ITG Font", sans-serif !important;
     font-size: initial;
     font-weight: 700 !important;
     vertical-align: middle;
@@ -49388,7 +49409,7 @@ menu.main-menu {
     align-items: center;
     background-color: #fff;
     border-bottom: solid 1px #dfe3e5;
-    font-family: museo-sans, sans-serif;
+    font-family: "ITG Font", sans-serif;
     font-size: 1.3333333333rem
 }
 
@@ -50873,3 +50894,5 @@ menu.main-menu {
         transform: scale(1, 1) translateX(-50%) translateY(-10px)
     }
 }
+
+

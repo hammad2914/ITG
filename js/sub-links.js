@@ -3399,7 +3399,7 @@ jQuery(document).ready(function () {
           const svgDoc = image.contentDocument;
           
           if (svgDoc) {
-            for (const element of svgDoc.querySelectorAll('.hover [data-slider-wheel-slide]')) {
+            for (const element of svgDoc.querySelectorAll('.icon [data-slider-wheel-slide]')) {
               element.addEventListener('click', event => {
                 $slickElement.slick('slickGoTo', event.currentTarget.dataset.sliderWheelSlide);
               });
